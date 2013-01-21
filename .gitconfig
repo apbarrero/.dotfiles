@@ -1,0 +1,13 @@
+[alias]
+        st = status -s
+        b = branch -a
+        pl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        co = checkout
+        l = log --graph --oneline --decorate
+[push]
+        default = current
+[color]
+        ui = true
+[core]
+        editor = vim --noplugin
+
