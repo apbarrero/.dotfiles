@@ -2,6 +2,12 @@
 
 # Installation script for configuration settings
 
+# ZSH
+if [ -f $HOME/.zshrc ]; then
+   mv $HOME/.zshrc $HOME/.zshrc~
+fi
+echo 'source $HOME/.dotfiles/.zshrc' > $HOME/.zshrc
+
 # VIM
 if [ -f $HOME/.vimrc ]; then
    grep -e 'source $HOME/.dotfiles/.vimrc' $HOME/.vimrc > /dev/null
