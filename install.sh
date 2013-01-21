@@ -24,9 +24,7 @@ if [ -f $HOME/.gitconfig ]; then
    cp $HOME/.gitconfig $HOME/.gitconfig~
 fi
 
-if [ `git config --get include.path` != "~/.dotfiles/.gitconfig" ]; then
-   echo -n '[include]\n\tpath = ~/.dotfiles/.gitconfig\n\n' > /tmp/gitconfig.tmp
-   [ -f $HOME/.gitconfig ] && cat $HOME/.gitconfig >> /tmp/gitconfig.tmp
-   mv /tmp/gitconfig.tmp $HOME/.gitconfig
+if [ "`git config --get include.path`" != "~/.dotfiles/.gitconfig" ]; then
+   git config --global --add include.path "~/.dotfiles/.gitconfig"
 fi
 
