@@ -40,5 +40,5 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Source specific environment settings if present
-[ -f $HOME/.env/.zshrc ] && source $HOME/.env/.zshrc
+test -f $HOME/.env/.zshrc && source $HOME/.env/.zshrc || return 0
 
