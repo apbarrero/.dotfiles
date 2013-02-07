@@ -5,6 +5,10 @@
     co = checkout
     l = log --graph --oneline --decorate
     lns = log --name-status
+    latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short) [%(committername)]'
+    ds = diff --staged
+    amend = commit --amend -C HEAD
+    undo = reset --soft HEAD^
 [push]
     default = current
 [color]
