@@ -9,6 +9,7 @@
     ds = diff --staged
     amend = commit --amend -C HEAD
     undo = reset --soft HEAD^
+    dt = difftool
 [push]
     default = current
 [color]
