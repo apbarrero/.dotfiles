@@ -9,7 +9,11 @@ fi
 echo 'source $HOME/.dotfiles/.zshrc' > $HOME/.zshrc
 
 # VIM
-if [ -f $HOME/.vimrc ]; then
+# Install .vimrc.local only if system spf13-vim installation is present
+if [ -d $HOME/.spf13-vim-3 ]; then
+    echo 'source $HOME/.dotfiles/.vimrc.local' >> $HOME/.vimrc.local
+# Regular vim installation
+elif [ -f $HOME/.vimrc ]; then
    grep -e 'source $HOME/.dotfiles/.vimrc' $HOME/.vimrc > /dev/null
    if [ $? -ne 0 ]; then
       cp $HOME/.vimrc $HOME/.vimrc~
