@@ -12,4 +12,6 @@
     ui = true
 [core]
     editor = vim --noplugin
+[merge]
+   defaultToUpstream = true
 
