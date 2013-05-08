@@ -33,3 +33,6 @@ nmap <leader>s<left>   :leftabove  vnew<CR>
 nmap <leader>s<right>  :rightbelow vnew<CR>
 nmap <leader>s<up>     :leftabove  new<CR>
 nmap <leader>s<down>   :rightbelow new<CR>
+
+set hlsearch                        " Highlight search results
+nnoremap <F3> :set hlsearch!<CR>    " Toggle search highlighting
