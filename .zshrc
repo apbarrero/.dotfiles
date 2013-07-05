@@ -10,6 +10,8 @@ export TERM=xterm-256color
 # time that oh-my-zsh is loaded.
 ZSH_THEME="apbarrero"
 
+export EDITOR=vim
+
 alias vi="vim"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
