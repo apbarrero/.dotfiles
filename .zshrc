@@ -43,7 +43,7 @@ export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/u
 if [ -d /usr/local/git/bin ]; then
    export PATH=/usr/local/git/bin:$PATH
 fi
-
+export PATH=$HOME/bin:$PATH
 
 # Source specific environment settings if present
 test -f $HOME/.env/.zshrc && source $HOME/.env/.zshrc || return 0
