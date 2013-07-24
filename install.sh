@@ -8,6 +8,10 @@ if [ -f $HOME/.zshrc ]; then
 fi
 echo 'source $HOME/.dotfiles/.zshrc' > $HOME/.zshrc
 
+if [ -d $HOME/.oh-my-zsh ]; then
+   ln -s $HOME/.dotfiles/.functions.zsh $HOME/.oh-my-zsh/functions/
+fi
+
 # VIM
 # Install .vimrc.local only if system spf13-vim installation is present
 if [ -d $HOME/.spf13-vim-3 ]; then
