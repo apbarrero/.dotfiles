@@ -9,6 +9,7 @@ fi
 echo 'source $HOME/.dotfiles/.zshrc' > $HOME/.zshrc
 
 if [ -d $HOME/.oh-my-zsh ]; then
+   test -d $HOME/.oh-my-zsh/functions || mkdir $HOME/.oh-my-zsh/functions
    ln -s $HOME/.dotfiles/.functions.zsh $HOME/.oh-my-zsh/functions/
 fi
 
