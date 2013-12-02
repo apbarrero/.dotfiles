@@ -12,6 +12,7 @@
     amend = commit --amend -C HEAD
     undo = reset --soft HEAD^
     dt = difftool
+    ls = ls-files
 [push]
     default = current
 [color]
