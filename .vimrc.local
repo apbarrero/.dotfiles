@@ -26,9 +26,6 @@ nmap <leader>s<down>   :rightbelow new<CR>
 set hlsearch                        " Highlight search results
 nnoremap <F3> :set hlsearch!<CR>    " Toggle search highlighting
 
-au Bufread,BufNewFile *.feature set filetype=gherkin
-au! Syntax gherkin source ~/.vim/cucumber.vim
-
 " buildr stuff
 au Bufread,BufNewFile buildfile set filetype=ruby
 
