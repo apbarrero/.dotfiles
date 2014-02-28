@@ -22,4 +22,8 @@
     editor = vim --noplugin
 [merge]
    defaultToUpstream = true
+   tool = vimdiff
+   conflictstyle = diff3
+[mergetool]
+   prompt = false
 
