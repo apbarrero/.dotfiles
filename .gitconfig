@@ -16,7 +16,7 @@
     dt = difftool
     ls = ls-files
     local = log --branches --not --remotes
-    ahead = !git log HEAD..origin/$(git symbolic-ref HEAD | sed "s:refs/heads/::g")
+    ahead = !git log HEAD..$(git rev-parse --abbrev-ref --symbolic-full-name @{u})
 [push]
     default = current
 [color]
