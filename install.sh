@@ -37,3 +37,8 @@ if [ "`git config --get include.path`" != "~/.dotfiles/.gitconfig" ]; then
    git config --global --add include.path "~/.dotfiles/.gitconfig"
 fi
 
+# i3
+if [ -e "${HOME}/.i3" ]; then
+   mv ${HOME}/.i3 ${HOME}/.i3~
+fi
+ln -s ${HOME}/.dotfiles/.i3 ${HOME}/.i3
