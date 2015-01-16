@@ -98,15 +98,15 @@ set $ws8 "8-music"
 set $ws9 "9-projector"
 
 # Configure Workspaces placements
-workspace $ws1 output LVDS-1
-workspace $ws2 output DP-3
-workspace $ws3 output DP-3
-workspace $ws4 output DP-3
-workspace $ws5 output LVDS-1
-workspace $ws6 output DP-3
-workspace $ws7 output DP-3
-workspace $ws8 output LVDS-1
-workspace $ws9 output VGA-1
+workspace $ws1 output eDP1
+workspace $ws2 output HDMI3
+workspace $ws3 output HDMI3
+workspace $ws4 output HDMI3
+workspace $ws5 output eDP1
+workspace $ws6 output HDMI3
+workspace $ws7 output HDMI3
+workspace $ws8 output eDP1
+workspace $ws9 output VGA1
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
