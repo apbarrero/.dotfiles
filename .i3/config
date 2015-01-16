@@ -179,3 +179,4 @@ exec --no-startup-id gnome-sound-applet   #sound applet
 exec --no-startup-id feh --bg-scale /home/eanopeo/wood-wallpaper-51-hd-1080p.jpg   #wallpaper
 exec --no-startup-id $HOME/.dropbox-dist/dropboxd # Dropbox
 exec --no-startup-id pidgin
+exec gnome-settings-daemon
