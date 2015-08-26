@@ -42,3 +42,10 @@ if [ -e "${HOME}/.i3" ]; then
    mv ${HOME}/.i3 ${HOME}/.i3~
 fi
 ln -s ${HOME}/.dotfiles/.i3 ${HOME}/.i3
+
+# dunst
+if [ -e "${HOME}/.config/dunst/dunstrc" ]; then
+    mv ${HOME}/.config/dunst/dunstrc ${HOME}/.config/dunst/dunstrc~
+fi
+ln -s ${HOME}/.dotfiles/.config/dunst/dunstrc ${HOME}/.config/dunst/dunstrc
+
