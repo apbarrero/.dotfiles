@@ -18,6 +18,7 @@
     local = log --branches --not --remotes
     ahead = !git log HEAD..$(git rev-parse --abbrev-ref --symbolic-full-name @{u})
     gpush = !git push origin HEAD:$(git symbolic-ref HEAD 2>/dev/null | sed s:/heads/:/for/:g)
+    gpp = !git push origin HEAD:$(git symbolic-ref HEAD 2>/dev/null | sed s:/heads/:/heads/${USER}/:g)
 [push]
     default = current
 [color]
