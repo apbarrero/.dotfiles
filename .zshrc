@@ -41,9 +41,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-if [ -d /usr/local/git/bin ]; then
-   export PATH=/usr/local/git/bin:$PATH
-fi
 export PATH=$HOME/bin:$PATH
 
 # Source specific environment settings if present
