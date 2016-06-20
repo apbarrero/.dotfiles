@@ -43,6 +43,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PATH=$HOME/bin:$PATH
 
+# source iTerm2 shell integration tools
+test "iTerm.app" = "$TERM_PROGRAM" -a -f $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || return 0
+
 # Source specific environment settings if present
 test -f $HOME/.env/.zshrc && source $HOME/.env/.zshrc || return 0
 

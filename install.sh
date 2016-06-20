@@ -13,6 +13,8 @@ if [ -d $HOME/.oh-my-zsh ]; then
    ln -s $HOME/.dotfiles/.functions.zsh $HOME/.oh-my-zsh/functions/
 fi
 
+curl -L https://iterm2.com/misc/zsh_startup.in > $HOME/.iterm2_shell_integration.zsh
+
 # VIM
 # Install .vimrc.local only if system spf13-vim installation is present
 if [ -d $HOME/.spf13-vim-3 ]; then
