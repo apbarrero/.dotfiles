@@ -187,7 +187,7 @@ bar {
 }
 
 exec --no-startup-id nm-applet            #network applet
-exec --no-startup-id gnome-sound-applet   #sound applet
+exec --no-startup-id volumeicon #sound applet
 exec --no-startup-id feh --bg-scale /home/antonioperez/Imágenes/187667_bass-guitar-wallpaper.jpg #wallpaper
 exec --no-startup-id $HOME/.dropbox-dist/dropboxd # Dropbox
 exec --no-startup-id slack
