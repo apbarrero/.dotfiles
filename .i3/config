@@ -178,7 +178,7 @@ bar {
       statusline #ffffff
       separator #666666
 
-      focused_workspace  #4c7899 #cede04 #323d48
+      focused_workspace  #4c7899 #a2b62a #323d48
       active_workspace   #333333 #5f676a #ffffff
       inactive_workspace #333333 #222222 #888888
       urgent_workspace   #2f343a #900000 #ffffff
@@ -200,7 +200,7 @@ bindsym XF86AudioMute exec amixer -D pulse -q set Master toggle
 
 # $i3-theme-window
 # class                 border  backgr. text    indicator child_border
-client.focused          #cede04 #cede04 #323d48 #2e9ef4   #cede04
+client.focused          #a2b62a #a2b62a #323d48 #2e9ef4   #a2b62a
 client.focused_inactive #333333 #5f676a #323d48 #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #323d48 #900000   #900000
