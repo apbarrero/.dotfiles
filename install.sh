@@ -50,5 +50,6 @@ ln -s ${HOME}/.dotfiles/.i3 ${HOME}/.i3
 if [ -e "${HOME}/.config/dunst/dunstrc" ]; then
     mv ${HOME}/.config/dunst/dunstrc ${HOME}/.config/dunst/dunstrc~
 fi
+mkdir -p ${HOME}/.config/dunst
 ln -s ${HOME}/.dotfiles/.config/dunst/dunstrc ${HOME}/.config/dunst/dunstrc
 
