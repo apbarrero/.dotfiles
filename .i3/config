@@ -193,10 +193,13 @@ exec --no-startup-id $HOME/.dropbox-dist/dropboxd # Dropbox
 exec --no-startup-id slack
 exec gnome-settings-daemon
 
-# DELL sound keys
+# Sound keys
 bindsym XF86AudioRaiseVolume  exec  amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume  exec  amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -D pulse -q set Master toggle
+# Screen brightness
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
 
 # $i3-theme-window
 # class                 border  backgr. text    indicator child_border
