@@ -196,7 +196,7 @@ exec --no-startup-id feh --bg-scale /home/antonioperez/Imágenes/187667_bass-gui
 exec --no-startup-id $HOME/.dropbox-dist/dropboxd # Dropbox
 exec --no-startup-id slack
 exec --no-startup-id dunst
-exec gnome-settings-daemon
+exec unity-settings-daemon
 
 # Sound keys
 bindsym XF86AudioRaiseVolume  exec  amixer -q set Master 2dB+ unmute
