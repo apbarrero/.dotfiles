@@ -1,3 +1,4 @@
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'ryanoasis/nerd-fonts'
 Plugin 'posva/vim-vue'
+Plugin 'editorconfig/editorconfig-vim'
