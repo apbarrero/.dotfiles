@@ -205,6 +205,9 @@ bindsym XF86AudioMute exec amixer -D pulse -q set Master toggle
 # Screen brightness
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
+# Keyboard brightness
+bindsym XF86KbdBrightnessUp exec light -k -A 5
+bindsym XF86KbdBrightnessDown exec light -k -U 5
 
 # $i3-theme-window
 # class                 border  backgr. text    indicator child_border
