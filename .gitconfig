@@ -19,6 +19,7 @@
     ahead = !git log HEAD..$(git rev-parse --abbrev-ref --symbolic-full-name @{u})
     gpush = !git push origin HEAD:$(git symbolic-ref HEAD 2>/dev/null | sed s:/heads/:/for/:g)
     cp = cherry-pick
+    ls-assume-unchanged = !git ls-files -v | grep ^[[:lower:]] | awk '{ print $2 }'
 [push]
     default = current
 [color]
