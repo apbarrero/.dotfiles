@@ -58,3 +58,17 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+let g:airline_inactive_collapse=1
+let g:airline#extensions#default#section_truncate_width = {
+         \ 'b': 0,
+         \ 'x': 0,
+         \ 'y': 0,
+         \ 'z': 0,
+         \ 'warning': 80,
+         \ 'error': 80,
+         \ }
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+let g:airline#extensions#fugitiveline#enabled = 1
+let g:airline_section_c = '%t'
+let g:airline#extensions#branch#format = 1
