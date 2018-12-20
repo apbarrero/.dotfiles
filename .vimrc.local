@@ -72,3 +72,14 @@ let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 let g:airline#extensions#fugitiveline#enabled = 1
 let g:airline_section_c = '%t'
 let g:airline#extensions#branch#format = 1
+
+" Syntastic setup
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let s:eslintrc = findfile('.eslintrc', system('git rev-parse --show-toplevel')[:-2])
+let g:syntastic_javascript_eslint_args = '--config ' . s:eslintrc
+nnoremap <leader>l :SyntasticCheck<CR>
+nnoremap <leader>lr :SyntasticReset<CR>
