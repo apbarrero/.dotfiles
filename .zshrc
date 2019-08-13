@@ -43,7 +43,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/.cargo/bin:$HOME/bin:$PATH
 
 # Source i3 display settings alias
 test "i3" = "$DESKTOP_SESSION" && source $HOME/.i3/alias.zsh
