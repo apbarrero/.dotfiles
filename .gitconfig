@@ -11,6 +11,7 @@
     latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short) [%(committername)]'
     d = diff
     ds = diff --staged
+    dnw = diff --ignore-space-at-eol -b -w --ignore-blank-lines
     amend = commit --amend -C HEAD
     undo = reset --soft HEAD^
     dt = difftool
