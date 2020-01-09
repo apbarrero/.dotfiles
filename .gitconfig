@@ -21,6 +21,7 @@
     gpush = !git push origin HEAD:$(git symbolic-ref HEAD 2>/dev/null | sed s:/heads/:/for/:g)
     cp = cherry-pick
     ls-assume-unchanged = !git ls-files -v | grep ^[[:lower:]] | awk '{ print $2 }'
+    branches = !git for-each-ref --sort='-authordate:iso8601' --format=' %(color:green)%(authordate:iso8601)%09%(color:white)%(refname:short)' refs/heads
 [push]
     default = current
 [color]
