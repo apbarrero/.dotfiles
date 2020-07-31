@@ -647,7 +647,7 @@ imap <C-b> <esc>:CtrlPCurWD<cr>
 " NerdTree
 " ====================
 " For toggling
-nmap <C-e> :NERDTreeToggle<CR>
+nmap <Leader>e :NERDTreeToggle<CR>
 noremap <Leader>n :NERDTreeToggle<cr>
 noremap <Leader>f :NERDTreeFind<cr>
 
