@@ -51,6 +51,9 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " A plugin of NERDTree showing git status
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" Create nice looking images for code snippets
+Plug 'segeljakt/vim-silicon'
+
 
 """" Code Management
 " Commenter
