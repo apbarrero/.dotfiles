@@ -18,6 +18,7 @@ alias vi="vim"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias cb="xclip -selection clipboard"
+alias please="sudo"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -37,7 +38,7 @@ alias cb="xclip -selection clipboard"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails git)
+plugins=(rails git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
