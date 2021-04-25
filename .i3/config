@@ -100,11 +100,11 @@ set $ws9 "9-projector"
 # Configure Workspaces placements
 workspace $ws1 output eDP1
 workspace $ws2 output eDP1
-workspace $ws3 output HDMI-2
-workspace $ws4 output HDMI-2
+workspace $ws3 output HDMI-1
+workspace $ws4 output HDMI-1
 workspace $ws5 output eDP1
-workspace $ws6 output HDMI-2
-workspace $ws7 output HDMI-2
+workspace $ws6 output HDMI-1
+workspace $ws7 output HDMI-1
 workspace $ws8 output eDP1
 workspace $ws9 output VGA1
 
@@ -121,7 +121,7 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace 10
 
 # Move active workspace to another monitor
-bindsym $mod+Shift+h move workspace to output HDMI-2
+bindsym $mod+Shift+h move workspace to output HDMI-1
 bindsym $mod+Shift+m move workspace to output eDP-1
 
 # move focused container to workspace
