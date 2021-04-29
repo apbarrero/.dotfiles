@@ -22,6 +22,7 @@
     cp = cherry-pick
     ls-assume-unchanged = !git ls-files -v | grep ^[[:lower:]] | awk '{ print $2 }'
     branches = !git for-each-ref --sort='-authordate:iso8601' --format=' %(color:green)%(authordate:iso8601)%09%(color:white)%(refname:short)' refs/heads
+	pf = push --force-with-lease
 [push]
     default = current
 [color]
