@@ -196,6 +196,8 @@ exec --no-startup-id slack
 exec --no-startup-id blueman-applet
 exec unity-settings-daemon
 
+# Screen
+bindsym XF86Display exec screen-toggle.sh
 # Screen brightness
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
