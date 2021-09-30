@@ -193,7 +193,6 @@ bar {
 exec --no-startup-id nm-applet            #network applet
 exec --no-startup-id volumeicon #sound applet
 exec --no-startup-id feh --bg-scale ${HOME}/wallpaper #wallpaper
-exec --no-startup-id $HOME/.dropbox-dist/dropboxd # Dropbox
 exec --no-startup-id slack
 exec --no-startup-id dunst
 exec --no-startup-id blueman-applet
