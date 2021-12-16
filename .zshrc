@@ -6,6 +6,9 @@ export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
 export TERM=xterm-256color
 
+# less to not paginate if less than one page
+export LESS="-F -X $LESS"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
