@@ -192,6 +192,7 @@ bar {
 
 exec --no-startup-id nm-applet            #network applet
 exec --no-startup-id feh --bg-scale ${HOME}/wallpaper #wallpaper
+exec --no-startup-id dunst -config ~/.i3/dunst
 exec --no-startup-id slack
 exec --no-startup-id blueman-applet
 exec --no-startup-id gnome-terminal -- ssh-add ~/.ssh/id_ed25519
