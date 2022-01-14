@@ -218,7 +218,7 @@ filetype plugin indent on     " required
 "
 " Settings
 "
-set clipboard=unnamed           " Operations such as yy, D, and P work with the system clipboard. No need to prefix them with "+ or "*.
+set clipboard=unnamedplus       " Operations such as yy, D, and P work with the system clipboard aliasing + and * clipboards. No need to prefix them with "+ or "*.
 set noerrorbells                " No beeps
 set number                      " Show line numbers
 set backspace=indent,eol,start  " Makes backspace key more powerful.
