@@ -39,6 +39,8 @@ fi
 if [ "`git config --get include.path`" != "~/.dotfiles/.gitconfig" ]; then
    git config --global --add include.path "~/.dotfiles/.gitconfig"
 fi
+ln -s ${HOME}/.dotfiles/.gitignore ${HOME}/.gitignore
+
 
 # i3
 if [ -e "${HOME}/.i3" ]; then

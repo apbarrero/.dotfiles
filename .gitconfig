@@ -29,6 +29,7 @@
     ui = true
 [core]
     editor = vim --noplugin
+	excludesfile = ~/.gitignore
 [merge]
    defaultToUpstream = true
    tool = vimdiff
