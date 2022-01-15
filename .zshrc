@@ -42,6 +42,9 @@ plugins=(git zsh-z zsh-autosuggestions zsh-syntax-highlighting sudo npm)
 
 source $ZSH/oh-my-zsh.sh
 
+# less to not paginate if less than one page
+export LESS="-F -X $LESS"
+
 # Customize to your needs...
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PATH=$HOME/.cargo/bin:$HOME/bin:$PATH
@@ -50,8 +53,8 @@ export PATH=$HOME/.cargo/bin:$HOME/bin:$PATH
 test "i3" = "$DESKTOP_SESSION" && source $HOME/.i3/alias.zsh
 
 # source iTerm2 shell integration tools
-test "iTerm.app" = "$TERM_PROGRAM" -a -f $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || return 0
+test "iTerm.app" = "$TERM_PROGRAM" -a -f $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || true
 
 # Source specific environment settings if present
-test -f $HOME/.env/.zshrc && source $HOME/.env/.zshrc || return 0
+test -f $HOME/.env/.zshrc && source $HOME/.env/.zshrc || true
 
