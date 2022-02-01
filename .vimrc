@@ -199,6 +199,10 @@ Plug 'hashivim/vim-packer'
 " shfmt
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 
+" Code Navigation
+Plug 'sagi-z/onetags'
+Plug 'sagi-z/oonav'
+
 
 " EXTRA
 
@@ -879,3 +883,15 @@ let g:terraform_fmt_on_save=1
 
 
 " vim:ts=2:sw=2:et
+
+" ====================
+" oonav
+" ====================
+" To disable default mappings, since they collide with Fugitive's
+let g:oonav#create_mappings = 0
+
+"Goto derived (down the class hierarchy)
+map <unique> <Leader>jd  <Plug>(oonav-down)
+
+"Goto base (up the class hierarchy)
+map <unique> <Leader>jb  <Plug>(oonav-up)
