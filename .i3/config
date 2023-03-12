@@ -197,6 +197,8 @@ exec --no-startup-id dunst -config ~/.i3/dunst
 exec --no-startup-id slack
 exec --no-startup-id blueman-applet
 exec --no-startup-id gnome-terminal -- ssh-add ~/.ssh/id_ed25519
+exec xinput set-prop "UNIW0001:00 093A:1336 Touchpad" "libinput Tapping Enabled" 1
+exec xinput set-prop "UNIW0001:00 093A:1336 Touchpad" "libinput Natural Scrolling Enabled" 1
 exec unity-settings-daemon
 
 # Screen
