@@ -19,6 +19,7 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias cb="xclip -selection clipboard"
 alias please="sudo"
+alias myip="curl -s https://checkip.amazonaws.com"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
