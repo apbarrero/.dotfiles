@@ -59,4 +59,4 @@ test "iTerm.app" = "$TERM_PROGRAM" -a -f $HOME/.iterm2_shell_integration.zsh && 
 # Source specific environment settings if present
 test -f $HOME/.env/.zshrc && source $HOME/.env/.zshrc || true
 
-source $HOME/.asdf/asdf.sh
+test -f "$HOME/.asdf/asdf.sh" && source $HOME/.asdf/asdf.sh
