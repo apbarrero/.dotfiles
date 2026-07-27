@@ -41,7 +41,9 @@ alias myip="curl -s https://checkip.amazonaws.com"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git z zsh-autosuggestions zsh-syntax-highlighting sudo npm asdf)
 
-source $ZSH/oh-my-zsh.sh
+# Load oh-my-zsh only if it is installed (skipped on machines without it,
+# e.g. macOS/Warp where autosuggestions & syntax highlighting are built in)
+test -d "$ZSH" && source $ZSH/oh-my-zsh.sh
 
 # less to not paginate if less than one page
 export LESS="-F -X $LESS"
