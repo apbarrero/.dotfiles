@@ -31,6 +31,24 @@ else
    echo 'source $HOME/.dotfiles/.vimrc' > $HOME/.vimrc
 fi
 
+# NEOVIM / LazyVim
+# Wire portable personal settings (leader key, etc.) into an existing LazyVim
+# installation. Appended to lua/config/options.lua because that file runs after
+# LazyVim's own defaults but before lazy.setup() maps plugin <leader> keys.
+NVIM_OPTIONS="$HOME/.config/nvim/lua/config/options.lua"
+NVIM_LAZY="$HOME/.config/nvim/lua/config/lazy.lua"
+NVIM_WIRING='dofile(vim.fn.expand("~/.dotfiles/nvim-config/init.lua"))'
+if [ -f "$NVIM_OPTIONS" ] && grep -q 'LazyVim/LazyVim' "$NVIM_LAZY" 2>/dev/null; then
+   grep -F "$NVIM_WIRING" "$NVIM_OPTIONS" > /dev/null 2>&1
+   if [ $? -ne 0 ]; then
+      cp "$NVIM_OPTIONS" "$NVIM_OPTIONS~"
+      printf '\n%s\n' "$NVIM_WIRING" >> "$NVIM_OPTIONS"
+      echo 'Wired personal nvim settings into LazyVim (lua/config/options.lua).'
+   fi
+else
+   echo 'Skipping nvim: no LazyVim installation found at ~/.config/nvim.'
+fi
+
 # GIT
 if [ -f $HOME/.gitconfig ]; then
    cp $HOME/.gitconfig $HOME/.gitconfig~
