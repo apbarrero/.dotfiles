@@ -52,6 +52,10 @@ export LESS="-F -X $LESS"
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:$PATH
 
+# Homebrew (macOS): prepend its paths when present (the PATH lines above are
+# Linux-oriented and would otherwise drop /opt/homebrew/bin)
+test -x /opt/homebrew/bin/brew && eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Source i3 display settings alias
 test "i3" = "$DESKTOP_SESSION" && source $HOME/.i3/alias.zsh
 
