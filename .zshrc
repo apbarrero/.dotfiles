@@ -46,7 +46,7 @@ plugins=(git z zsh-autosuggestions zsh-syntax-highlighting sudo npm asdf)
 test -d "$ZSH" && source $ZSH/oh-my-zsh.sh
 
 # less to not paginate if less than one page
-export LESS="-F -X $LESS"
+export LESS="-F -R -X $LESS"
 
 # Customize to your needs...
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
