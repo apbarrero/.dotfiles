@@ -69,3 +69,6 @@ test -f "$HOME/.asdf/asdf.sh" && source $HOME/.asdf/asdf.sh
 
 # Set up fzf key bindings and fuzzy completion
 test -x "$(which fzf)" && eval "$(fzf --zsh)"
+
+# Set up zoxide (provides the `z` command; replaces oh-my-zsh's z plugin)
+test -x "$(command -v zoxide)" && eval "$(zoxide init zsh)"
