@@ -4,7 +4,11 @@ ZSH=$HOME/.oh-my-zsh
 # Terminal fonts and colours according to the times
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
-export TERM=xterm-256color
+# Only outside tmux. tmux sets TERM itself (tmux-256color) so terminfo
+# describes tmux's real capabilities; overriding it inside a session is what
+# makes italics, cursor shapes and some key sequences misbehave. Harmless on
+# machines where Warp already provides this, which is why it went unnoticed.
+[[ -z "$TMUX" ]] && export TERM=xterm-256color
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
